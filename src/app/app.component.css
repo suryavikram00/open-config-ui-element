@@ -1,0 +1,10 @@
+.text-with-cue {
+  position: relative; /* Necessary for absolute positioning of the cue card */
+  display: inline-block; /* To ensure that the hover works properly */
+}
+
+.cue-card {
+  display: block; /* Show the cue card on hover */
+  top: -10px; /* Adjust position */
+  left: 0; /* Adjust position */
+}

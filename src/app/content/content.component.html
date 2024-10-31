@@ -1,0 +1,20 @@
+<div class="content">
+  <span class="text-with-cue" style="position: relative;">
+    {{ text }}
+    <i
+      class="bi"
+      *ngIf="allowEdit"
+      (click)="toggleCueCard()"
+      style="cursor: pointer; margin-left: 5px;"
+    >
+      
+      <ng-container *ngIf="isCueCardVisible; else editIcon">
+      <i class="bi bi-x-circle"></i> <!-- Close icon -->
+      </ng-container>
+      <ng-template #editIcon>
+      <i class="bi bi-pencil"></i> <!-- Edit icon -->
+      </ng-template>
+    </i>  
+    <app-cue-card *ngIf="isCueCardVisible" [text]="text" [configName]="configName" (textUpdated)="onTextUpdated()"></app-cue-card>
+  </span>
+</div>

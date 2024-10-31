@@ -1,0 +1,21 @@
+.cue-card {
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  display: block;
+}
+
+/* Resetting potential header styles */
+.cue-card h3,
+.cue-card h4,
+.cue-card h5,
+.cue-card h6 {
+  font-size: inherit; /* Reset to parent font size */
+  font-weight: normal; /* Reset to normal weight */
+  margin: 0; /* Reset margin */
+  color: inherit; /* Reset color */
+}
