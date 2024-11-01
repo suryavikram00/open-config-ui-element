@@ -1,7 +1,13 @@
 <div class="cue-card">
-  <input class="form" type="text" [(ngModel)]="updatedText" /> <!-- Editable input field -->
+  <div>
+    <label class="form-label">config name: </label>
+    <span>{{ configName }}</span>
+  </div>
+  <div>
+    <input class="form" type="text" [(ngModel)]="updatedText" /> <!-- Editable input field -->
   &nbsp;
   <button class="btn btn-primary" (click)="updateText()">
     <i class="bi bi-save"></i> <!-- Bootstrap save icon -->
   </button> <!-- Update button -->
+  </div>
 </div>
