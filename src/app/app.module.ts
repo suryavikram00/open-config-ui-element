@@ -17,8 +17,8 @@ import { CueCardComponent } from './content/cue-card/cue-card.component';
     HttpClientModule
   ],
   providers: [],
-  entryComponents: [ContentComponent]  // Ensure entry components are defined
-  // bootstrap: [AppComponent]
+  // entryComponents: [ContentComponent]  // Ensure entry components are defined
+  bootstrap: [AppComponent]
 })
 export class AppModule { 
   constructor(private injector: Injector) {
